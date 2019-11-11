@@ -28,7 +28,7 @@
 #define USE_LIBYUV
 
 #ifdef MTK_HARDWARE
-#include <DpBlitStream.h>
+#include <media/stagefright/dpframework/DpBlitStream.h>
 
 const OMX_COLOR_FORMATTYPE OMX_MTK_COLOR_FormatYV12 = (OMX_COLOR_FORMATTYPE)0x7F000200;
 const OMX_COLOR_FORMATTYPE OMX_COLOR_FormatVendorMTKYUV = (OMX_COLOR_FORMATTYPE)0x7F000001;

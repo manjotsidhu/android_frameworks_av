@@ -89,6 +89,10 @@ private:
             signed r1, signed g1, signed b1,
             signed r2, signed g2, signed b2);
 
+#ifdef MTK_HARDWARE
+    status_t convertYUVToRGBHW(const BitmapParams &src, const BitmapParams &dst);
+#endif
+
     ColorConverter(const ColorConverter &);
     ColorConverter &operator=(const ColorConverter &);
 };

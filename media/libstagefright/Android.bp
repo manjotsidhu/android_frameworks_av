@@ -51,6 +51,7 @@ cc_library_shared {
         "NuCachedSource2.cpp",
         "NuMediaExtractor.cpp",
         "OMXClient.cpp",
+		"OMXCodec.cpp",
         "OmxInfoBuilder.cpp",
         "OggExtractor.cpp",
         "SampleIterator.cpp",
@@ -78,6 +79,7 @@ cc_library_shared {
         "libcutils",
         "libdl",
         "libdrmframework",
+		"libdpframework",
         "libexpat",
         "libgui",
         "liblog",
@@ -144,7 +146,8 @@ cc_library_shared {
     product_variables: {
         debuggable: {
             // enable experiments only in userdebug and eng builds
-            cflags: ["-DENABLE_STAGEFRIGHT_EXPERIMENTS"],
+			// TODO: add conditional for MTK_HARDWARE flag
+            cflags: ["-DENABLE_STAGEFRIGHT_EXPERIMENTS", "-DMTK_HARDWARE"],
         },
     },
 

@@ -324,6 +324,9 @@ private:
     void signalSubmitOutputMetadataBufferIfEOS_workaround();
     status_t allocateOutputBuffersFromNativeWindow();
     status_t cancelBufferToNativeWindow(BufferInfo *info);
+	#ifdef MTK_HARDWARE
+		void setHalWindowColorFormat(OMX_COLOR_FORMATTYPE &eHalColorFormat);
+	#endif
     status_t freeOutputBuffersNotOwnedByComponent();
     BufferInfo *dequeueBufferFromNativeWindow();
 

@@ -42,7 +42,6 @@
 #include <media/stagefright/MediaCodecList.h>
 #include <media/stagefright/MediaExtractor.h>
 #include <media/stagefright/MetaData.h>
-#include <media/stagefright/OMXCodec.h>
 #include <media/stagefright/SurfaceUtils.h>
 #include <media/stagefright/Utils.h>
 #include <media/stagefright/SkipCutBuffer.h>
